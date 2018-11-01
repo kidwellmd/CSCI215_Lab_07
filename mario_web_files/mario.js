@@ -140,27 +140,27 @@ function draw() {
 
 
 
-    document.body.onkeyup = function(e) {  // listen for a key
-
-        e = event || window.event;             // any kind of event
-        var keycode = e.charCode || e.keyCode; // any kind of key
-        console.log(keycode);
-
-        if(keycode === 37) {
-   			setTimeout(faceForward, 200);
-
-        }
-
-        if(keycode === 39) {
-            Mario.Image.src = "marioturnsright.png";
-            ctx.drawImage(bgImage,0,0);
-            ctx.drawImage(Mario.Image, Mario.x, Mario.y, Mario.w, Mario.h);
-            if(Mario.x < 1155) {
-                Mario.x += 5;
-            }
-        }
-
-    }
+    // document.body.onkeyup = function(e) {  // listen for a key
+    //
+    //     e = event || window.event;             // any kind of event
+    //     var keycode = e.charCode || e.keyCode; // any kind of key
+    //     console.log(keycode);
+    //
+    //     if(keycode === 37) {
+   	// 		setTimeout(faceForward, 200);
+    //
+    //     }
+    //
+    //     if(keycode === 39) {
+    //         Mario.Image.src = "marioturnsright.png";
+    //         ctx.drawImage(bgImage,0,0);
+    //         ctx.drawImage(Mario.Image, Mario.x, Mario.y, Mario.w, Mario.h);
+    //         if(Mario.x < 1155) {
+    //             Mario.x += 5;
+    //         }
+    //     }
+    //
+    // }
 
 
 
