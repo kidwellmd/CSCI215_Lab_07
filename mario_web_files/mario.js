@@ -52,6 +52,7 @@ function draw() {
 	// loaded, you must do it this way
 	bgImage.onload = function(){
 		ctx.drawImage(bgImage, 0, 0);
+        ctx.drawImage(Mario.Image,Mario.x,Mario.y,Mario.w,Mario.h);
 
     }
 
